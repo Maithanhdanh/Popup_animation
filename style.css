@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    background:rgb(13,17,19);
+    color: white;
+    
+}
+
+body{
+    font-family: Poppins, Helvetica, Arial, sans-serif; 
+    min-height: 100vh;
+    display:grid;
+    place-items: center;
+    background:rgb(13,17,19);
+    color: white;
+    justify-content: center;
+}
+
+.match-info, .match-info > *{
+    border-radius:25px;
+    background: none;
+}
+.match-info > h3 {
+    position: absolute;
+    bottom:0.5em;
+    padding: 0 0.75em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.match {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, p {
+    margin: 0
+}
+.live{
+    position: relative;
+    max-width: 100%;
+}
+.live-info{
+    position:absolute;
+    z-index: 1;
+    display: flex;
+    background:none;
+    top:1em;
+    padding: 0 0.75em;
+}
+.live-info > * {
+    background:none;
+    margin-left: 5px;
+}
+.live-status{
+    background:red;
+    border-radius: 85px;
+    padding: 2px 6px 2px 4px;
+}
+.live-status > * {
+    background:none;
+}
+
+.number-watch > *{
+    background:none;
+}
+.number-watch {
+    background:rgb(13,17,19);
+    border-radius: 85px;
+    padding: 2px 6px 2px 4px;
+}
+
+.live {
+    width: 18em;
+    border: 1px solid white;
+    border-radius:25px;
+    background-color: #24282A;
+}
+.match-info{
+    position:relative
+}
+img {
+    max-width: 100%;
+}
+
+.team-vs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+    bottom:0px;
+    padding: 0.5em 1em;
+    background: #24282A;
+    border-radius:25px;
+}
+.team-vs span, img {
+    background:none
+}
+.team-vs > .team > img{
+    background: #fff;
+    border-radius:50%;
+    width:40px;
+    height: 40px;
+    padding:0.2em;
+    
+}
+
+.vs-icon{
+    width:20px;
+    margin: 0 5px;
+}
+
+.team,.score{
+    display:flex;
+    align-items: center;
+    background:none;
+}
+.team > .team-name{
+    font-size: smaller;
+    margin: 0 5px
+}
+
+.competition-info {
+    position:relative;
+    background: none;
+    padding: 1em 0em 1.25em 1em;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+}
+/* .hover-divider{
+    position: relative;
+} */
+.competition-info > * {
+    background: none;
+}
+
+.competition-info > .bracket {
+    color: rgb(78, 159, 255);
+}
+
+
+.E-sports {
+    width: 18em;
+    position: relative;
+}
+.match-info > i {
+    display: none;
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    border-radius:50%;
+    height: 40px;
+    width: 40px;
+    color:red;
+    font-size: 50px;
+    top: 42%;
+    right: 45%;
+}
+.match-info > i::before {
+    position: absolute;
+    top: -12%;
+    right: -5%;
+}
+
+.E-sports:hover {
+    border: 1px solid #24282A;
+    border-radius:25px;
+}
+
+.E-sports:hover .live {
+    border: none;
+    border-radius:25px;
+}
+.E-sports:hover .competition-info {
+    border-top: 1px solid white;
+    z-index: 1;
+    transform: translateX(-0.3%) translateY(1%);
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    height: 100%;
+    background-color: #24282A;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.E-sports:hover .background {
+    z-index: 0;
+    opacity: 1;
+    transform: scale3d(1.111, 1, 1) translate3d(0px, -0.5px, 0px);
+}
+.E-sports:hover .live-info {
+    transform: translateX(-10%)
+}
+.E-sports:hover .match-info > img {
+    transform: scale3d(1.1, 1, 1) translate3d(0px, 1.2px, 0px);
+}
+.E-sports:hover .match-info > h3 {
+    transform: translateX(-5%);
+}
+
+
+.E-sports:hover .match-info > i {
+    display: flex;
+}
+
+.E-sports:hover .match-info > i:hover {
+    display: flex;
+    transform: scale(1.5)
+}
+
+.E-sports:hover .match-info > h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
